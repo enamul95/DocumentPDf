@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="visa_debit">#1f62af</color>
+    <color name="visa_credit_card">#122e44</color>
+    <color name="visa_header_color">#151959</color>
+    <color name="visa_round_color">#f2f4f8</color>
+    <color name="visa_changecolor">#1264c9</color>
+    <color name="visa_payment_send">#003FA9</color>
+    <color name="s_divider_color">#e6e6e6</color>
+    <color name="success_text_color">#28a745</color>
+    <color name="label">#1f62af</color>
+    <color name="red_300">#E57373</color>
+</resources>

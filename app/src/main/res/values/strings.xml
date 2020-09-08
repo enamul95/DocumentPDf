@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DocumentPDf</string>
+    <string name="visa_mn">MN</string>
+    <string name="change_card">Change</string>
+    <string name="visa_withdraw_amount">Withdraw Amount</string>
+    <string name="visa_inr">INR</string>
+    <string name="btn_visa_submit">Pay INR</string>
+    <string name="visa_add_card">Add Card</string>
+    <string name="visa_sent">Sent</string>
+    <string name="visa_total_payment_amount">Total Payment Amount</string>
+    <string name="visa_paid_with">Paid with</string>
+    <string name="visa_payment_type">Payment Type</string>
+    <string name="visa_locatoin">Location</string>
+    <string name="dhaka">Dhaka</string>
+    <string name="visa_transaction">Transaction Code</string>
+    <string name="visa_digital_receipt">Digital Receipt</string>
+    <string name="payment_sent">Payment sent</string>
+    <string name="bkash_success_title">Thank You!</string>
+    <string name="bkash_success_sub_title">Your transaction is successful</string>
+    <string name="visa_scan_to_pay">Scan to Pay</string>
+</resources>

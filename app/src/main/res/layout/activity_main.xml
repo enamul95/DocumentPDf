@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/visa_round_color"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/tv_digital_receipt_thank_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/spacing_middle"
+             android:gravity="center_vertical"
+             android:singleLine="true"
+             android:text="@string/bkash_success_title"
+             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+             android:textColor="@color/label"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/tv_digital_receipt_message"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/spacing_middle"
+             android:gravity="center_vertical"
+             android:singleLine="true"
+             android:text="@string/bkash_success_sub_title"
+             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+             android:textColor="@color/success_text_color"
+             android:textSize="16sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/visa_round_color"
+          android:padding="10dp"
+          android:weightSum="2">
+
+         <TextView
+             android:id="@+id/tv_digital_receipt_date"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="19 Sep 2020"
+             android:textSize="@dimen/text_size_base" />
+
+         <TextView
+             android:id="@+id/tv_digital_receipt_time"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="right"
+             android:text="12:00 PM"
+             android:textSize="@dimen/text_size_base" />
+      </LinearLayout>
+
+      <View
+          android:id="@+id/vw_date_bellow"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/s_divider_color" />
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_digital_receipt_merchant_short_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/visa_mn"
+                android:textColor="@color/visa_header_color"
+                android:textSize="@dimen/text_size_base" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/tv_digital_receipt_merchant_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Emaul Haque"
+                   android:textColor="@color/visa_header_color"
+                   android:textSize="@dimen/text_size_base"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/tv_digital_receipt_merchant_id"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Visa Merchant ID 5484849284838"
+
+                   android:textColor="@color/visa_header_color"
+                   android:textSize="@dimen/text_size_base" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_digital_receipt_sent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="@string/visa_sent"
+                android:textColor="@color/red_300"
+                android:textSize="@dimen/text_size_base" />
+         </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/s_divider_color" />
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:weightSum="2">
+
+               <TextView
+                   android:id="@+id/tv_digital_receipt_payment_amount_label"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="@string/visa_total_payment_amount"
+                   android:textColor="@color/visa_header_color"
+                   android:textSize="@dimen/text_size_base" />
+
+               <TextView
+                   android:id="@+id/tv_digital_receipt_inr"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:padding="5dp"
+                   android:text="@string/visa_inr"
+                   android:textColor="@color/visa_header_color"
+                   android:textSize="@dimen/text_size_base"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/tv_digital_receipt_payment_amount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:padding="5dp"
+                   android:text="0.00"
+                   android:textColor="@color/visa_header_color"
+                   android:textSize="@dimen/text_size_base" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:id="@+id/iv_card_image"
+                      android:layout_width="150dp"
+                      android:layout_height="80dp"
+                      android:layout_marginTop="50dp"
+                      android:elevation="5dp"
+
+                      android:scaleType="fitXY"
+                      android:src="@drawable/card_art"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent" />
+
+                  <ImageView
+                      android:id="@+id/iv_bank_asia_logo"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_margin="5dp"
+                      android:elevation="5dp"
+                      android:scaleType="fitXY"
+                      android:src="@drawable/visa_icon"
+                      app:layout_constraintStart_toStartOf="@+id/iv_card_image"
+                      app:layout_constraintTop_toTopOf="@+id/iv_card_image" />
+
+                  <ImageView
+                      android:id="@+id/iv_visa_logo"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_margin="5dp"
+                      android:elevation="5dp"
+                      android:scaleType="fitXY"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="@+id/iv_card_image"
+                      app:srcCompat="@drawable/visa_icon" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/tv_digital_receipt_paid_with"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="10dp"
+                      android:text="@string/visa_paid_with"
+                      android:textColor="@color/visa_header_color"
+                      android:textSize="@dimen/text_size_base" />
+
+                  <TextView
+                      android:id="@+id/tv_digital_receipt_paid_card"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:paddingTop="5dp"
+                      android:text="Enamul 9999999999999"
+                      android:textColor="@color/visa_header_color"
+                      android:textSize="@dimen/text_size_base"
+                      android:textStyle="bold" />
+               </LinearLayout>
+            </LinearLayout>
+         </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/s_divider_color" />
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_digital_receipt_payment_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visa_payment_type"
+                android:textColor="@color/visa_header_color"
+                android:textSize="@dimen/text_size_base" />
+
+            <TextView
+                android:id="@+id/tv_digital_receipt_scan_to_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/visa_scan_to_pay"
+                android:textColor="@color/visa_header_color"
+                android:textSize="@dimen/text_size_base"
+                android:textStyle="bold" />
+
+         </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/s_divider_color" />
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:orientation="vertical"
+             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_digital_receipt_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visa_locatoin"
+                android:textColor="@color/visa_header_color"
+                android:textSize="@dimen/text_size_base" />
+
+            <TextView
+                android:id="@+id/tv_digital_receipt_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/dhaka"
+                android:textColor="@color/visa_header_color"
+                android:textSize="@dimen/text_size_base"
+                android:textStyle="bold" />
+
+         </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/s_divider_color" />
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_digital_receipt_transaction_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visa_transaction"
+                android:textColor="@color/visa_header_color"
+                android:textSize="@dimen/text_size_base" />
+
+            <TextView
+                android:id="@+id/tv_digital_receipt_transaction_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="0000"
+                android:textColor="@color/visa_header_color"
+                android:textSize="@dimen/text_size_base"
+                android:textStyle="bold" />
+
+         </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/s_divider_color" />
+
+   </LinearLayout>
+
+</LinearLayout>
